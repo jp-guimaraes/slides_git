@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Fontes</title>
+    <link>https://jp-guimaraes.github.io/slides_git/home/</link>
+    <description>Recent content in Homes on Fontes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jp-guimaraes.github.io/slides_git/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_git/home/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_git/home/intro/</guid>
+      <description> Objetivos Entender a necessidade de usar um gerenciador de versão. Saber o que é o git e seus comandos básicos. Conhecer o github, criar um perfil, um repositório e uma página pública.
+ Sumário  Motivação Git Github Workflows Github pages   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_git/home/motivacao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_git/home/motivacao/</guid>
+      <description> Motivação Idealizado por Linus Torvalds
+Histórico com todas as alterações em arquivos de um projeto
+ código (matlab, python, etc) texto (txt, markdown, latex)  Backup
+ Filosofia? Tracking das mudanças no texto/código*
+Quem fez?
+O que fez?
+Quando fez?
+ Exemplo: Tensorflow
+Visualização das mudanças - Gource
+gource --seconds-per-day 0.5 --auto-skip-seconds 1   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_git/home/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_git/home/github/</guid>
+      <description> Github Plataforma de hospedagem para projetos usando git
+Projetos privados ou públicos
+Opensource ou não
+ Cerca de 36 milhões de usuários ativos
+100 milhões de projetos
+Comprada pela Microsoft em 2018
+ Perfis pessoais
+Organizações
+Repositórios
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_git/home/configuracao_inicial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_git/home/configuracao_inicial/</guid>
+      <description> Configurando git  Instalar git   Windows
+  Linux
+  Windows Subsystem for Linux
+   Configurar git $ git config --global user.name &amp;#34;Fulano de Tal&amp;#34; $ git config --global user.email fulanodetal@exemplo.br   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_git/home/workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_git/home/workflow/</guid>
+      <description>Workflows Como é o workflow?
+ Criando repositório do zero Clonando repositório   Criando repositório do zero    Criar repositório
+  Incluir novos arquivos e mudar conteúdo de arquivos já existentes
+  (stagging) Marcar mudanças como desejadas
+  (commiting) Documentar mudanças
+  (pushing) Enviar mudanças para o repositório remoto (github)
+    Clonando repositório  1. Clonar repositório no github</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.68.3" />
+    <meta charset="utf-8">
+<title>Introdução ao git</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/slides_git/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/slides_git/reveal-js/css/reveal.css"><link rel="stylesheet" href="/slides_git/robot-lung.css" id="theme"><link rel="stylesheet" href="/slides_git/highlight-js/color-brewer.min.css">
+    
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h1 id="introdução-ao-gerenciador-git">Introdução ao gerenciador git</h1>
+<p>Projeto Integrador - Informática</p>
+<p><a href="https://jp-guimaraes.github.io/">🌐 João Paulo Guimarães</a></p>
+</section>
+
+  
+
+    <section>
+
+<section data-shortcode-section>
+<h1 id="objetivos">Objetivos</h1>
+<p>Entender a necessidade de usar um gerenciador de versão.
+Saber o que é o git e seus comandos básicos.
+Conhecer o github, criar um perfil, um repositório e uma página pública.</p>
+</section><section>
+<h1 id="sumário">Sumário</h1>
+<ol>
+<li>Motivação</li>
+<li>Git</li>
+<li>Github</li>
+<li>Workflows</li>
+<li>Github pages</li>
+</ol>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="motivação">Motivação</h1>
+<p>Idealizado por Linus Torvalds</p>
+<p>Histórico com todas as alterações em arquivos de um projeto</p>
+<ul>
+<li>código (matlab, python, etc)</li>
+<li>texto (txt, markdown, latex)</li>
+</ul>
+<p><strong>Backup</strong></p>
+</section><section>
+<h1 id="filosofia">Filosofia?</h1>
+<p><em>Tracking das mudanças no texto/código</em>*</p>
+<p>Quem fez?</p>
+<p>O que fez?</p>
+<p>Quando fez?</p>
+</section><section>
+<p><a href="https://www.youtube.com/watch?v=t5LiGMAR9Ag&amp;ab_channel=gbolcer">Exemplo: Tensorflow</a></p>
+<p>Visualização das mudanças - <strong>Gource</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>gource --seconds-per-day 0.5 --auto-skip-seconds <span style="color:#ae81ff">1</span>
+</code></pre></div>
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="github">Github</h1>
+<p>Plataforma de hospedagem para projetos usando git</p>
+<p>Projetos privados ou públicos</p>
+<p>Opensource ou não</p>
+</section><section>
+<p>Cerca de 36 milhões de usuários ativos</p>
+<p>100 milhões de projetos</p>
+<p>Comprada pela Microsoft em 2018</p>
+</section><section>
+<p><a href="https://github.com/torvalds">Perfis pessoais</a></p>
+<p><a href="https://gitstar-ranking.com/google">Organizações</a></p>
+<p><a href="https://github.com/microsoft/vscode">Repositórios</a></p>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="configurando-git">Configurando git</h1>
+</section><section>
+<h1 id="instalar-git">Instalar git</h1>
+<ul>
+<li>
+<p>Windows</p>
+</li>
+<li>
+<p>Linux</p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/pt-br/learn/modules/get-started-with-windows-subsystem-for-linux/">Windows Subsystem for Linux</a></p>
+</li>
+</ul>
+</section><section>
+<h1 id="configurar-git">Configurar git</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>$ git config --global user.name <span style="color:#e6db74">&#34;Fulano de Tal&#34;</span>
+$ git config --global user.email fulanodetal@exemplo.br
+</code></pre></div>
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="workflows">Workflows</h1>
+<p>Como é o workflow?</p>
+<ul>
+<li>Criando repositório do zero</li>
+<li>Clonando repositório</li>
+</ul>
+</section><section>
+<h1 id="criando-repositório-do-zero">Criando repositório do zero</h1>
+</section><section>
+<ol>
+<li>
+<p>Criar repositório</p>
+</li>
+<li>
+<p>Incluir novos arquivos e mudar conteúdo de arquivos já existentes</p>
+</li>
+<li>
+<p>(stagging) Marcar mudanças como desejadas</p>
+</li>
+<li>
+<p>(commiting) Documentar mudanças</p>
+</li>
+<li>
+<p>(pushing) Enviar mudanças para o repositório remoto (github)</p>
+</li>
+</ol>
+</section><section>
+<p><img src="https://i.pinimg.com/originals/ff/f7/2f/fff72f0ca2846b0194e8fbdac4a38f54.png" alt=""></p>
+</section><section>
+<h1 id="clonando-repositório">Clonando repositório</h1>
+</section><section>
+<p><a href="https://github.com/itl-natal/tex_teste">1. Clonar repositório no github</a></p>
+<ol start="2">
+<li>
+<p>Incluir novos arquivos e mudar conteúdo de arquivos já existentes</p>
+</li>
+<li>
+<p>(stagging) Marcar mudanças como desejadas</p>
+</li>
+<li>
+<p>(commiting) Documentar mudanças</p>
+</li>
+<li>
+<p>(pushing) Enviar mudanças para o repositório remoto (github)</p>
+</li>
+</ol>
+</section><section>
+<p><img src="https://i.pinimg.com/originals/ff/f7/2f/fff72f0ca2846b0194e8fbdac4a38f54.png" alt=""></p>
+
+</section>
+</section>
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/slides_git/reveal-hugo/object-assign.js></script>
+
+<a href="/slides_git/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"transition":"slide","transition_speed":"fast"}</script>
+
+<script src="/slides_git/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/slides_git/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/slides_git/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/slides_git/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/slides_git/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/slides_git/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    
+    
+  </body>
+</html>
